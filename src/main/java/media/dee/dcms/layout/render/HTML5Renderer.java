@@ -18,7 +18,6 @@ package media.dee.dcms.layout.render;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import media.dee.dcms.core.GraphNode;
 import media.dee.dcms.core.components.UUID;
 import media.dee.dcms.core.components.WebComponent;
 import media.dee.dcms.core.db.GraphDatabaseService;
@@ -74,7 +73,7 @@ public class HTML5Renderer implements RenderService,WebComponent.Command, WebCom
     }
 
     @Override
-    public void render(OutputStream outputStream, GraphNode model) throws RenderException {
+    public void render(OutputStream outputStream, GraphDatabaseService.GraphNode model) throws RenderException {
         String query = "MATCH (m:Viewable)-[:TEMPLATE]->(t:Template) WHERE ID(m) = {id} RETURN t.template as template";
         try {
             Record r = graphDatabaseService.fetchOne(query, Collections.singletonMap("id", model.getRawId() ));
@@ -89,7 +88,7 @@ public class HTML5Renderer implements RenderService,WebComponent.Command, WebCom
     }
 
     @Override
-    public void render(OutputStream outputStream, Template template, GraphNode model) throws RenderException{
+    public void render(OutputStream outputStream, Template template, GraphDatabaseService.GraphNode model) throws RenderException{
 
         StringBuffer outbuff = templateService.render(template.getTemplate(), model);
         PrintWriter printWriter = new PrintWriter(outputStream);
