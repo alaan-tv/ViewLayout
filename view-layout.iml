@@ -9,7 +9,7 @@
     <facet type="Osmorc" name="OSGi">
       <configuration manifestGenerationMode="OsmorcControlled" manifestLocation="" jarfileLocation="layout-0.0.1-SNAPSHOT.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="" bundleSymbolicName="media.dee.dcms.layout" bundleVersion="0.0.1.SNAPSHOT" ignoreFilePattern="" useProjectDefaultManifestFileLocation="true" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
         <additionalProperties>
-          <property key="Export-Package" value="media.dee.renderer.html.*" />
+          <property key="Export-Package" value="media.dee.dcms.layout.*" />
           <property key="Bundle-Category" value="d.CMS" />
           <property key="Bundle-Vendor" value="dee.media" />
           <property key="Import-Package" value="*" />
@@ -40,5 +40,6 @@
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.8.0" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.8.0" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.8.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jsoup:jsoup:1.10.2" level="project" />
   </component>
 </module>

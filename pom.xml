@@ -39,6 +39,12 @@
             <artifactId>core</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>1.10.2</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 
 
@@ -80,7 +86,7 @@
 
                 <configuration>
                     <instructions>
-                        <Export-Package>media.dee.renderer.html.*</Export-Package>
+                        <Export-Package>media.dee.dcms.layout.*</Export-Package>
                         <Bundle-Category>d.CMS</Bundle-Category>
                         <Bundle-Vendor>dee.media</Bundle-Vendor>
                         <Import-Package>*</Import-Package>
