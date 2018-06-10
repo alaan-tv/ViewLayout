@@ -1,3 +1,5 @@
+[![Build Status](https://semaphoreci.com/api/v1/dee-media/d-view-layout/branches/master/badge.svg)](https://semaphoreci.com/dee-media/d-view-layout)
+
 # LayoutEngine
 Module provides the implementation of themes and layout concept of dee.cms.
 ## Themes
